@@ -27,7 +27,7 @@ def signup():
 def login_page():
     return render_template('login.html')
 
-def save_user_info(name, surname, email, password, fnb_user, file_path='user_data.json'):
+def save_user_info(name, surname, email, password, fnb_user,city, file_path='user_data.json'):
     hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
     user_info = {
@@ -35,7 +35,8 @@ def save_user_info(name, surname, email, password, fnb_user, file_path='user_dat
         "surname": surname,
         "email": email,
         "password": hashed_password.decode('utf-8'),
-        "fnb_user": True if fnb_user else False  # Save checkbox state as boolean
+        "fnb_user": True if fnb_user else False,  # Save checkbox state as boolean
+        "city": city
     }
 
     try:

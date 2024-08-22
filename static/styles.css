@@ -16,7 +16,7 @@ html, body {
 }
 
 .logo-img {
-    width: 350px; /* Ensure the image is properly sized */
+    max-width: 350px; /* Ensure the image is properly sized */
     height: 90px;
 }
 
@@ -30,10 +30,11 @@ html, body {
 
 .content-form{
     margin-top: 50px;
+  
 }
 
 fieldset{
-    width: 800px;
+    max-width: 800px;
     margin-left: 250px;
 }
 
@@ -47,7 +48,7 @@ label {
 
 /* Input Fields */
 input[type="text"],
-input[type="password"], input[type="email"] {
+input[type="password"], input[type="email"], select {
     width: calc(100% - 22px); /* Adjusted for padding */
     padding: 12px;
     margin-bottom: 20px;
@@ -77,3 +78,31 @@ button[type="submit"]{
     background-color: #45a049; /* Slightly darker on hover */
 }
 
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-img {
+        width: 80%;
+    }
+    
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    .content-form {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .content-form {
+        margin: 5px;
+    }
+}

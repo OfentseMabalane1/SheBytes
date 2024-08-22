@@ -31,10 +31,17 @@
         "fnb_user": true
     },
     {
-        "name": "Zinhle",
-        "surname": "Keswa",
-        "email": "zinksw@gmail.com",
-        "password": "$2b$12$2m955othTR0/GJ8xDtwKuu/vwVQ37bi5A8M2Gb9iJjI0ch0.qjzw.",
+        "name": "Zandile",
+        "surname": "Buthelezi",
+        "email": "luthabuthelezi18@gmail.com",
+        "password": "$2b$12$vL84D.s0i2iNyitd0JcQieIZm4eRE6UHkM40AHeZeh/cFiwtm.tXm",
+        "fnb_user": true
+    },
+    {
+        "name": "Zandile",
+        "surname": "Buthelezi",
+        "email": "luthabuthelezi18@gmail.com",
+        "password": "$2b$12$xOf6NplVnr8016pDG/NE0eahFiGLEE8sqBg6Piel6OGpmUxnpyF.y",
         "fnb_user": true
     }
 ]
