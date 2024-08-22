@@ -29,5 +29,12 @@
         "email": "luthabuthelezi18@gmail.com",
         "password": "$2b$12$C4ttsXsgIvOoJ8FrnWHaJutdDReUcUEMq87cTQXJQidHVl82bLmdC",
         "fnb_user": true
+    },
+    {
+        "name": "Zinhle",
+        "surname": "Keswa",
+        "email": "zinksw@gmail.com",
+        "password": "$2b$12$2m955othTR0/GJ8xDtwKuu/vwVQ37bi5A8M2Gb9iJjI0ch0.qjzw.",
+        "fnb_user": true
     }
 ]

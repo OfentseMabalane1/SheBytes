@@ -50,4 +50,4 @@ def save_user_info(name, surname, email, password, fnb_user, file_path='user_dat
         json.dump(data, file, indent=4)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=80)
