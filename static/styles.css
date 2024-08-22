@@ -8,6 +8,12 @@ html, body {
     background-color: black;
 } */
 
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
 .logo {
     display: flex;
     align-items: center;
@@ -95,6 +101,12 @@ button[type="submit"]{
     .content-form {
         margin: 10px;
     }
+
+     .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -106,3 +118,12 @@ button[type="submit"]{
         margin: 5px;
     }
 }
+
+/* Media query for desktops */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
