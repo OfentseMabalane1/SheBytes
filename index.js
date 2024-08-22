@@ -16,7 +16,7 @@ console.log("Printing city...")
 // res = `http://api.openweathermap.org/geo/1.0/reverse?lat=${-26.150678}&lon=${28.034144}&appid=${key}`
 console.log("Cityyyy")
 res = "https://api-ubt.mukuru.com/taurus/v1/resources/pay-out-partners"
-myFunc(res)
+// myFunc(res)
 
 function myFunc(res) {
     console.log("Insideeee")
@@ -28,6 +28,7 @@ function myFunc(res) {
 
 function handleClick() {
     console.log("Hi there ")
+    myFunc(res)
 }
 
 
