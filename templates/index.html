@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center Image</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to external CSS -->
+    <title>Location Finder</title>
 </head>
 <body>
-    <img src="{{ url_for('static', filename='picture.png') }}" alt="Centered Image">
+    <div class="body-content">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='picture.png') }}" alt="Centered Image" class="logo-img" width="350" height="150">
+            <h1>Mukuru Location Finder</h1>
+        </div>
+
+        <div class="content-form">
+            <fieldset >
+
+                <form action="/login" method="post">
+                    <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <input type="checkbox" id="fnb_user" name="fnb_user">FNB users
+                </br>
+                </div>
+                <div class="button-login">
+                    <button type="submit" class="login">Login</button>
+                </div>
+            </form>
+        </fieldset>
+        </div>
+    </div>
 </body>
 </html>
