@@ -29,5 +29,19 @@
         "email": "luthabuthelezi18@gmail.com",
         "password": "$2b$12$C4ttsXsgIvOoJ8FrnWHaJutdDReUcUEMq87cTQXJQidHVl82bLmdC",
         "fnb_user": true
+    },
+    {
+        "name": "Zandile",
+        "surname": "Buthelezi",
+        "email": "luthabuthelezi18@gmail.com",
+        "password": "$2b$12$vL84D.s0i2iNyitd0JcQieIZm4eRE6UHkM40AHeZeh/cFiwtm.tXm",
+        "fnb_user": true
+    },
+    {
+        "name": "Zandile",
+        "surname": "Buthelezi",
+        "email": "luthabuthelezi18@gmail.com",
+        "password": "$2b$12$xOf6NplVnr8016pDG/NE0eahFiGLEE8sqBg6Piel6OGpmUxnpyF.y",
+        "fnb_user": true
     }
 ]
