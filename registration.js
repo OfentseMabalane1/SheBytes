@@ -24,7 +24,6 @@ function addUser() {
     let contact = String(document.getElementById('contactDetails').value);
     let myUser = new User(name, contact, country, bd)
     ourClients[ourClients.length] = myUser
-    console.log("Checkig the user")
     console.log(userExists(contact))
     
 }
