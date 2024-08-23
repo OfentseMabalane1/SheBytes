@@ -7,23 +7,28 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('/home/wtc/SheBytes/images/mukuru.png'); 
+    background-image: url('../images/Untitled\ design.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
 
 }
 
 .container {
-    background-color: #FFA500;
+    background-color: #e6643d;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
+    max-height: 700px;
     box-sizing: border-box;
 }
 
 h2 {
     margin-top: 0;
     text-align: center;
+    color: white;
 }
 
 .form-group {
@@ -33,6 +38,7 @@ h2 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: rgb(88, 84, 84);
 }
 
 .form-group input,
@@ -54,6 +60,7 @@ button{
     border: none;
     border-radius: 6px; /* More rounded corners */
     cursor: pointer;
+    font-size: 16px;
     font-family: 'Arial', sans-serif; /* Consistent font */
     font-weight: bold; /* Emphasize button text */
     text-align: center; /* Center-align button text */
