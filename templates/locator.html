@@ -9,35 +9,54 @@
     <style>
         /* Header styles */
         .header {
-            background: #000000;
+            background: #f05423; /* Updated background color */
             color: #ffffff;
-            padding: 10px 20px;
+            padding: 20px 50px; /* Increased padding for a larger header */
             position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 80px; /* Optional: Fixed height for the header */
         }
         .header .logo {
-            height: 40px; /* Adjust logo height as needed */
+            height: 50px; /* Adjust logo height as needed */
         }
         .header .auth-buttons {
             display: flex;
-            gap: 10px;
+            gap: 15px; /* Increase gap between buttons */
         }
         .header .auth-buttons a {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px; /* Increase font size for the links */
         }
         .header .auth-buttons a:hover {
             text-decoration: underline;
         }
+        /* Sidebar styles */
+        .sidebar {
+            background: #f05423; /* Sidebar background color */
+            padding: 30px; /* Padding inside the sidebar */
+            border-radius: 8px; /* Optional: Rounded corners */
+            margin-bottom: 20px; /* Adds space below the sidebar */
+            height: 400px; /* Minimum height of the sidebar */
+            position: relative; /* Ensure it does not stretch to the bottom */
+        }
+        .sidebar .card {
+            background: #ffffff; /* Card background color */
+            border: none; /* Remove card border */
+        }
+        .sidebar .card-body {
+            padding: 15px; /* Padding inside the card */
+        }
+        
     </style>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <img src="logos.JPG" alt="Logo" class="logo">
+        <img src="mukuru.png" alt="Logo" class="logo" height="50px">
         <div class="auth-buttons">
             <a href="#">Home</a>
             <a href="#">Mukuru Locator</a>
@@ -46,20 +65,34 @@
         </div>
     </header>
     
-
     <div class="container-fluid">
-        <h1 class="my-4">My Location</h1>
+        <h1 class="my-4">Mukuru PinPoints</h1>
         
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 sidebar">
+                <!-- Sidebar content with background color -->
                 <!-- Search Bar -->
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Search...">
+                    <label for="city" class="form-label">City:</label>
+                    <select name="city" id="city" class="form-select" required>
+                        <option value="bulawayo">Bulawayo</option>
+                        <option value="gweru">Gweru</option>
+                        <option value="harare">Harare</option>
+                        <option value="victoria-falls">Victoria Falls</option>
+                        <option value="beitbridge">Beitbridge</option>
+                        <option value="kwekwe">Kwekwe</option>
+                        <option value="chinhoyi">Chinhoyi</option>
+                        <option value="chivhu">Chivhu</option>
+                        <option value="mutare">Mutare</option>
+                        <option value="masvingo">Masvingo</option>
+                        <option value="chiredzi">Chiredzi</option>
+                    </select>
+                    <!-- <input type="text" class="form-control mt-3" placeholder="Search..."> -->
                 </div>
 
                 <!-- Slider -->
                 <div class="mb-3">
-                    <label for="customRange1" class="form-label">Adjust Range</label>
+                    <label for="customRange1" class="form-label">Adjust Radius</label>
                     <input type="range" class="form-range" id="customRange1">
                 </div>
 
@@ -71,15 +104,14 @@
                         <a href="#" class="btn btn-primary">Pin point location</a>
                     </div>
                 </div>
-                
             </div>
 
-            <div class="col-md-9">
-                <div class="ratio ratio-16x9">
+            <div class="col-md-9" >
+                <div class="ratio ratio-16x9" style="height:650px">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2210742230126!2d144.9632803153142!3d-37.81421797975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43ebd67c3f%3A0x506f0b535df7f44!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1616131474089!5m2!1sen!2sau" 
                         width="600" 
-                        height="450" 
+                        height="200" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy">
