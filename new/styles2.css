@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/Untitled\ design.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+
+}
+
+.container {
+    background-color: #e6643d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    max-height: 700px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(88, 84, 84);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: gray; /* Slightly darker green */
+    color: white;
+    border: none;
+    border-radius: 6px; /* More rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-weight: bold; /* Emphasize button text */
+    text-align: center; /* Center-align button text */
+}
+
+button:hover {
+    background-color: orange;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #007bff; /* Added border color change on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Added box-shadow for better focus indication */
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <!-- <img src="../new/picture.png" alt="Centered Image" class="logo-img" width="350" height="150"> -->
+            <h1>Mukuru PayOut Finder</h1>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Sign Up </h1>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="idType">Identity Document Type:</label>
+                <select id="idType" name="idType" required>
+                    <option value="id">ID</option>
+                    <option value="passport">Passport</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Would Rather Not Say</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contactDetails">Phone number:</label>
+                <input type="text" id="contactDetails" name="contactDetails" required>
+            </div>
+            <div class="form-group">
+                <label for="birthCountry">Birth Country:</label>
+                <select id="birthCountry" name="birthCountry" required>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Kenya">Kenya</option>
+                    <!-- Add more countries where Mukuru offers services -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <a href="#" class="button" onclick="addUser()">Sign Up</a>
+        </form>
+    </div>
+</body>
+</html>
