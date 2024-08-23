@@ -2,7 +2,8 @@ let banks = []
 let banksDictionary = {"zb bank":"5", "cabs bank":"7", "cbz bank":"9"}
 
 
-function getPoints() {
+function getPoints(event) {
+    event.preventDefault()
 
     let bankName = document.getElementById('bank-name').value;
     let city = document.getElementById('city-name').value;
@@ -24,6 +25,7 @@ function getPoints() {
 
 
 function storeBanks(listOfBanks, userCity) {
+    console.log(listOfBanks)
 
     for(let i = 0; i < listOfBanks.length; i++) {
         banks[i] = listOfBanks[i]
