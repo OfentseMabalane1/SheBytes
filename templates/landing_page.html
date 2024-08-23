@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Landing Page</title>
+    <style>
+        /* Header styles */
+        .header {
+            background: #FFA500;
+            color: #ffffff;
+            padding: 10px 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            height: 40px; /* Adjust logo height as needed */
+        }
+        .header .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header .auth-buttons a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header .auth-buttons a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="nav-bar">
+    <!-- <img src="{{ url_for('static', filename='picture.png') }}" alt="Logo"> -->
+
+    <header class="header">
+        <img src="logos.png" alt="Logo" class="logo" width="220px">
+             <!-- <img src="{{ url_for('static', filename='logos.jpeg') }}" alt="Logo"> -->
+
+        <div class="auth-buttons">
+            <a href="#">Home</a>
+            <a href="#">Mukuru Locator</a>
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </header>
+</div>
+</body>
+</html>
