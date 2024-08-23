@@ -1,0 +1,85 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #e6643d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Pay points section styles */
+.pay-points {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pay-points h2 {
+    margin-bottom: 10px;
+}
+
+.pay-points ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pay-points li {
+    margin-bottom: 15px;
+}
+
+.pay-points h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.pay-points p {
+    margin-bottom: 5px;
+}
+
+/* Map section styles */
+.map {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.map h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
