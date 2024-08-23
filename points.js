@@ -3,7 +3,7 @@ let banksDictionary = {"zb bank":"5", "cabs bank":"7", "cbz bank":"9"}
 
 
 function getPoints(event) {
-    // event.preventDefault()
+    event.preventDefault()
 
     let bankName = document.getElementById('bank-name').value;
     let city = document.getElementById('city-name').value;
@@ -32,14 +32,16 @@ function storeBanks(listOfBanks, userCity) {
         if(listOfBanks[i].address.city.toUpperCase() == userCity.toUpperCase()) {banks[i] = listOfBanks[i]}
     }
     console.log(banks)
-    // displayNearPoints(banks)"pay-point1-add"
+    displayNearPoints(banks)
     
 }
 
 
 function displayNearPoints(banks) {
     window.location.href = 'pay_points.html'
-    document.getElementById("pay-point1-add").innerHTML = banks[0].address.streetAddress 
-    document.getElementById("pay-point2-add").innerHTML = banks[1].address.streetAddress 
+    // document.getElementById("pay-point1-add").innerHTML = banks[0].address.streetAddress 
+    // document.getElementById("pay-point2-add").innerHTML = banks[1].address.streetAddress 
+    
+    console.log(document.getElementById("pay-point1-add").innerHTML = banks[0].address.streetAddress.value)
     
 }

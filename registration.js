@@ -51,12 +51,12 @@ function userExists(contact) {
 
 
 function landing(event) {
+    window.location.href = 'get_points.html'
     event.preventDefault();
 
     let myVar = document.getElementById("userContact").value;
     console.log(ourClients)
     
-    window.location.href = 'get_points.html'
 
 
     // if(userExists(myVar)) {
