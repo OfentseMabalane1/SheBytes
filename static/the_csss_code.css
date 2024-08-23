@@ -1,0 +1,128 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Landing Page */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;  
+    background: #000000;
+    color: #000000;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* mdi:twitter */
+.mdi-twitter {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+/* material-symbols:globe */
+.material-symbols-globe {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 593px;
+    top: 405px;
+}
+
+/* iconoir:navigator */
+.iconoir-navigator {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 523px;
+    top: 480px;
+}
+
+/* Vector styles */
+.vector-black, .vector-white {
+    position: absolute;
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.33%;
+    bottom: 8.33%;
+}
+
+.vector-black {
+    background: #000000;
+}
+
+.vector-white {
+    background: #FFFFFF;
+}
+
+/* Backgrounds */
+.iPad-Pro-11 {
+    position: absolute;
+    width: 1320px;
+    height: 940px;
+    left: calc(50% - 1320px / 2);
+    top: calc(50% - 940px / 2);
+    background: url('iPad Pro 11" - M4 - Silver - Landscape.png');
+}
+
+.welcome-back {
+    position: absolute;
+    width: 518px;
+    height: 599px;
+    left: 593px;
+    top: 133px;
+    background: url('Welcome Back.png');
+    filter: blur(4px);
+}
+
+/* Overlays */
+.bezel {
+    position: absolute;
+    width: 1210px;
+    height: 834px;
+    left: 0px;
+    top: 0px;
+}
+
+/* UI Elements */
+.rectangle-24 {
+    position: absolute;
+    width: 328px;
+    height: 56px;
+    left: 98px;
+    top: 405px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.my-location {
+    position: absolute;
+    width: 432px;
+    height: 65px;
+    left: 103px;
+    top: 314px;
+    font-family: 'Baskervville', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+    color: #000000;
+}

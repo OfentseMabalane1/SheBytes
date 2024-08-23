@@ -1,0 +1,129 @@
+/* Global Styles
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the logo image and the text */
+    border-bottom: 2px solid black;
+}
+
+.logo-img {
+    max-width: 350px; /* Ensure the image is properly sized */
+    height: 90px;
+}
+
+.logo h1 {
+    margin: 0; /* Remove any default margins from the h1 element */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make sure the text stands out */
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+.content-form{
+    margin-top: 50px;
+  
+}
+
+fieldset{
+    max-width: 800px;
+    margin-left: 250px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Highlight labels */
+    color: #333; /* Darker text color */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"], input[type="email"], select {
+    width: calc(100% - 22px); /* Adjusted for padding */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly more rounded corners */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-size: 16px; /* Slightly larger font size */
+}
+
+/* Button Styling */
+button[type="submit"]{
+    display: block;
+    width: calc(100% - 22px); /* Adjusted for padding */
+    padding: 12px;
+    background-color: #4CAF50; /* Slightly darker green */
+    color: white;
+    border: none;
+    border-radius: 6px; /* More rounded corners */
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-weight: bold; /* Emphasize button text */
+    text-align: center; /* Center-align button text */
+}
+
+/* Button Hover Effect */
+.login:hover {
+    background-color: #45a049; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-img {
+        width: 80%;
+    }
+    
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    .content-form {
+        margin: 10px;
+    }
+
+     .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .content-form {
+        margin: 5px;
+    }
+}
+
+/* Media query for desktops */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
